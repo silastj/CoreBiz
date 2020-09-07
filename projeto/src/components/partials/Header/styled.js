@@ -26,7 +26,7 @@ export const ContainerHeader = styled.div`
         @media screen and (max-width:768px){
             display:flex;
             flex-direction:column;
-            align-items:center;
+            align-items:flex-start;
             align-self:center;
             padding-top:10px;
         }

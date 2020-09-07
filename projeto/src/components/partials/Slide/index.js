@@ -50,14 +50,14 @@ export default class SimpleSlider extends Component {
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                     <img src="/assets/img/banner.png" alt=""/>
+                     <img src="/assets/img/banner.png" alt="Corebiz"/>
                 </div>
                 <div className="slideTwo">
                     <div className="imgDiceTwo">
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                    <img src="/assets/img/mobilef.png" alt=""/>                    
+                    <img src="/assets/img/mobilef.png" alt="Corebiz"/>                    
                 </div>
 
 
@@ -69,7 +69,7 @@ export default class SimpleSlider extends Component {
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                     <img src="/assets/img/banner.png" alt=""/>
+                     <img src="/assets/img/banner.png" alt="Corebiz"/>
                 </div>
 
                 <div className="slideTwo">
@@ -77,7 +77,7 @@ export default class SimpleSlider extends Component {
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                     <img src="/assets/img/mobileF.png" alt=""/>
+                     <img src="/assets/img/mobileF.png" alt="Corebiz"/>
                 </div>
 
                 
@@ -86,7 +86,7 @@ export default class SimpleSlider extends Component {
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                     <img src="/assets/img/banner.png" alt=""/>
+                     <img src="/assets/img/banner.png" alt="Corebiz"/>
                 </div>
 
                 
@@ -95,7 +95,7 @@ export default class SimpleSlider extends Component {
                         <h3>Olá, o que você está buscando?</h3>
                         <h2>Criar ou migrar seu e-commerce</h2>
                     </div>
-                     <img src="/assets/img/mobileF.png" alt=""/>
+                     <img src="/assets/img/mobileF.png" alt="Corebiz"/>
                 </div>
                 </Slider>
             </div>
