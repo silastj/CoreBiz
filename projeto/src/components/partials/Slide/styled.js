@@ -29,6 +29,16 @@ export const Slide = styled.div`
   top: 30%;
   left:25%;
   transform:translateY(30%);
+
+  @media screen and (max-width:768px){
+    top: 5%;
+    left: 2%;
+  }
+
+  @media screen and (max-width:425px){
+    top: 0px;
+    left:20px;
+  }
   
 }
 .imgDice h3{
@@ -36,13 +46,24 @@ export const Slide = styled.div`
   font-size: 30px;
   line-height: 41px;
   color: #FFFFFF;
+
+  @media screen and (max-width:425px){
+    font-size: 20px;
+    max-width: 274px;
+    line-height: 20px;
+  }
 }
 .imgDice h2{
   font-weight: bold;
-  font-size: 40px;
-  line-height: 41px;
+  font-size: 30px;
+  line-height: 31px;
   color: #FFFFFF;
   max-width:370px;
+  margin-top:10px;
+  @media screen and (max-width:768px){
+    max-width: 300px;
+  }
+
 }
 .slideOne img{
   width:100%;
@@ -67,11 +88,12 @@ export const Slide = styled.div`
  
 }
 .slideTwo .imgDiceTwo h2{
-  width: 330px;
+  width: 260px;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 32px;
   color: #FFFFFF;
   line-height:33px;
+
 }
 .variable-width .slick-slide>p {
   background: blue;
@@ -134,6 +156,10 @@ export const Slide = styled.div`
 }
 .slick-dots li button:before{
   font-size:10px !important;
+
+  @media screen and (max-width:425px){
+    font-size:7px !important;
+  }
 }
 .slick-next,
 .slick-prev{
@@ -188,7 +214,20 @@ export const Slide = styled.div`
 }
 /* FIM SLIDE TOP */
 
-
+@media screen and (max-width:425px){
+  .slick-slider .slick-track{
+    height:190px;
+  }
+  .cnITkx .slick-slide img{
+    height:190px;
+  }
+  .slick-dots{
+    bottom: 15px !important;
+  }
+  .slick-dots li{
+    width:10px;
+  }
+}
 
 .slideOne{
     background-image:url('/assets/img/mobileF.png');

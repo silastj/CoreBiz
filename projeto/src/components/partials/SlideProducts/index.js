@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { Slide, Fake} from './styled';
+import { Slide} from './styled';
 import { Link } from 'react-router-dom';
 
 import {  useDispatch} from 'react-redux';
@@ -12,16 +12,15 @@ const SimpleSlider = () =>{
     const dispatch = useDispatch();
     const [products, setProducts ] = useState([]);
     const [qt, setQt] = useState(100);
-    const [loading, setLoading] = useState(true);
 
-    useEffect(()=> {
+    useEffect(()=> {        
         const getProducts = async () => {
-            const pro = await api.getProducts();          
+            const pro = await api.getProducts();   
+                 
                 setProducts(pro);  
                                         
         };
         getProducts();
-        setLoading(false);      
         
 
     }, []);
@@ -82,17 +81,17 @@ const SimpleSlider = () =>{
                 <Slider {...settings}>
                 
                     {products.map((i,k)=>
-                                    <div className="calcados" key={k}> 
-
-                                       {loading && <Fake height={300}>CarregandoA...</Fake> }              
+                                    
+                                    <div className="calcados" key={k}>                                       
+                                            
                                         <img src={i.imageUrl} alt=""/>
                                         <div className="dice">
-                                        {loading && <Fake height={300}>CarregandoA...</Fake> }
+                                        
                                         <h1>{i.productName}</h1>  
                                         
 
 
-                                        {loading && <Fake height={300}>CarregandoA...</Fake> }
+                                       
                                         {i.stars === 1 &&
                                         <div className="starsC">                                          
                                             <img src="/assets/img/starC.svg" alt="" />
@@ -147,21 +146,15 @@ const SimpleSlider = () =>{
                                                 <img src="/assets/img/starC.svg" alt="" />
                                                 <img src="/assets/img/starC.svg" alt="" />
                                             </div>  
-                                        }
-                                        {loading && <Fake height={300}>CarregandoA...</Fake> }
-                                        
+                                        }                                        
                                         {i.listPrice > 0 &&                                         
                                             <h4>de R$ {(i.listPrice / qt).toFixed(2).replace('.', ',')}</h4> 
-                                                                                 
-                                           
                                         }
                                         {i.listPrice <= 0 && 
                                             <h4 className="h4"></h4>
                                         }
-                                        {loading && <Fake height={300}>CarregandoA...</Fake> }
                                         <h3>por R$ {(i.price / qt).toFixed(2).replace('.', ',')}</h3>
                                         
-                                        {loading && <Fake height={300}>CarregandoA...</Fake> }
                                         {i.installments.length > 0 &&
                                             <p>ou em {i.installments[0].quantity} de R$ {(i.installments[0].value / qt).toFixed(2).replace('.', ',')}</p>                                
                                         } 
@@ -184,6 +177,7 @@ const SimpleSlider = () =>{
                                         }
                                     </div>  
                         )}
+                         
                         <div><p>Carregando.... </p></div>
                         <div><p>Carregando.... </p></div>
                         <div><p>Carregando.... </p></div>

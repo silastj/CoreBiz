@@ -89,15 +89,15 @@ export const ContainerHeader = styled.div`
         }
     }
     .cart span{
-        width:20px;
-        height:20px;
+        width:14px;
+        height:14px;
         border-radius:50%;
         background-color:red;
         color:#fff;
         font-weight:bold;
-        font-size:13px;
+        font-size:10px;
         margin-left:9px;
-        line-height: 20px;
+        line-height: 14px;
         text-align: center;
     }
     .logo{
